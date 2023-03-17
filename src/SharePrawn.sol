@@ -1,12 +1,11 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.17;
 
-import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
-import { Address } from "@openzeppelin/contracts/utils/Address.sol";
-import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import { Context } from "@openzeppelin/contracts/utils/Context.sol";
+import { Ownable } from "openzeppelin-contracts/contracts/access/Ownable.sol";
+import { Address } from "openzeppelin-contracts/contracts/utils/Address.sol";
+import { IERC20 } from "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
+import { Context } from "openzeppelin-contracts/contracts/utils/Context.sol";
 import { IUniswapV2Factory, IUniswapV2Pair, IUniswapV2Router01, IUniswapV2Router02 } from "./Interface.sol";
-import "hardhat/console.sol";
 
 contract SharePrawn is Context, IERC20, Ownable {
     using Address for address;

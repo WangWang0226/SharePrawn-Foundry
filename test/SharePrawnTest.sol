@@ -144,7 +144,7 @@ contract SharePrawnTest is Test {
 
     // });
 
-    function testLockStacking() {
+    function testLockStacking() public {
 
     }
 
